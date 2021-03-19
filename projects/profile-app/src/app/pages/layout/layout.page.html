@@ -1,0 +1,30 @@
+<div class="flex flex-col items-stretch w-full min-h-full bg-gray-200 dark:bg-gray-900 font-display">
+    <div class="grid grid-cols-1 gap-2 p-8">
+        <div>
+            <ul class="flex items-center justify-start">
+                <li>
+                    <div class="flex-shrink-0 w-16 h-16 mr-8">
+                        <div class="w-full h-full overflow-hidden border-2 border-white rounded-full ring-2 ring-gray-400">
+                            <img class="object-contain" src="/assets/profile-icon.jpg" alt="{GCS}">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <gcs-menu-item text="Home" route="/home"></gcs-menu-item>
+                </li>
+                <li>
+                    <gcs-menu-item text="Profile" route="/profile"></gcs-menu-item>
+                </li>
+                <li>
+                    <gcs-menu-item text="Portfolio" route="/portfolio"></gcs-menu-item>
+                </li>
+                <li>
+                    <gcs-menu-item text="Contact" route="/contact"></gcs-menu-item>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="">
+        <router-outlet></router-outlet>
+    </div>
+</div>
