@@ -4,11 +4,12 @@ import { LayoutPage } from './layout/layout.page';
 import { HomePage } from './home/home.page';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
+import { ProfilePage } from './profile/profile.page';
 
 
 
 @NgModule({
-  declarations: [LayoutPage, HomePage],
+  declarations: [LayoutPage, HomePage, ProfilePage],
   imports: [
     CommonModule,
     RouterModule,

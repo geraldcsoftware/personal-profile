@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage, LayoutPage } from './pages';
+import { HomePage, LayoutPage, ProfilePage } from './pages';
 
 const routes: Routes = [
   {
@@ -8,7 +8,9 @@ const routes: Routes = [
     component: LayoutPage,
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'home' },
-      { path: 'home', component: HomePage }
+      { path: 'home', component: HomePage },
+      { path: 'profile', component: ProfilePage },
+      { path: '**', redirectTo: 'home' }
     ]
   }
 ];
